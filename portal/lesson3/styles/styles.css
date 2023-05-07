@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans:wght@500&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+header {
+    background-color: pink;
+    padding: 10px;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    
+}
