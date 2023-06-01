@@ -10,7 +10,7 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 );
 document.querySelector("p").innerHTML = fulldate;
 
-function myFunction() {
+function onClick() {
 	var x = documet.getElementById("myLinks");
 	if (x.style.display === "block") {
 		x.style.display = "none";
