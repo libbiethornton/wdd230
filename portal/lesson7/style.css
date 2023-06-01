@@ -1,0 +1,17 @@
+picture {
+    display: flex;
+    padding: 5px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+article img[data-src] {
+    filter: blur(0.2em);
+}
+  
+article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
