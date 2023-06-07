@@ -1,9 +1,9 @@
 header {
     background-color: #3C5200;
     color: white;
-    padding: 3em;
+    padding: 1em;
     display: grid;
-    grid: repeat(3, auto)/repeat(6, auto);
+    grid: repeat(3, auto)/repeat(2, auto);
 }
 
 nav {
@@ -15,7 +15,7 @@ nav {
 nav ul li {
     list-style-type: none;
     font-size: 2em;
-    display: inline;
+    /* display: inline; */
     padding: .2em;
 }
 
@@ -46,21 +46,25 @@ a {
 .logo {
     grid-row: 1/2;
     grid-column: 1/2;
+    width: 150px;
 }
 
 .title {
     grid-row: 1/2;
     grid-column: 2/4;
+    font-size: 1rem;
 }
  
 #fb {
-    width: 100px;
+    width: 80px;
     grid-row: 1/2;
     grid-column: 4/5;
+    padding: 0;
+    margin: 0px;
 }
 
 #insta {
-    width: 100px;
+    width: 80px;
     grid-row: 1/2;
     grid-column: 5/6;
 }
@@ -68,6 +72,7 @@ a {
 .ham {
     grid-row: 1/2;
     grid-column: 6/7;
+    height: 50px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,28 +87,29 @@ p {
 footer {
     background-color: #3C5200;
     color: white;
-    padding: 2em;
+    padding: 1em;
 }
 
 .top {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .top p {
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 .bottom {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 section {
     background-color: #3C6E71;
-    padding: 50px;
     margin: 10px;
 }
 
