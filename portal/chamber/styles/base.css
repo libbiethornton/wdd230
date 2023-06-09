@@ -157,3 +157,49 @@ a:hover {
     color: white;
     font-size: 1em;
 }
+
+/* ---------- Form ----------- */
+
+form {
+    margin: 3rem 0;
+    border: 5px dotted #3C6E71;
+    border-radius: 10px;
+    padding: 1rem 10%;
+    padding-right: 15%;
+}
+
+form label.topform, form label.radioform {
+    display: block;
+    padding-top: 1.5rem;
+    color: #3C6E71;
+    font-size: 1.5rem;
+}
+
+form label.topform input, form label.topform select {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #284B63;
+    border-radius: 4px;
+    padding: .8rem;
+    color: #284B63;
+    width: 100%;
+    max-width: 20rem;
+    background-color: lightgrey;
+}
+
+form label.radioform {
+    display: block;
+    padding: .8rem;
+    color: #284B63;
+}
+
+form input.formbutton {
+    border: none;
+    background-color: #284B63;
+    color: #fff;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
