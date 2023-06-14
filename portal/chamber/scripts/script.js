@@ -71,10 +71,10 @@ const displayCompanies = (companies) => {
     let phone = document.createElement('p');
     let website = document.createElement('p');
 
-    h3.textContent = `${company.business}`;
-    address.textContent = `${company.address}`;
-    phone.textContent = `${company.phone}`;
-    website.textContent = `${company.website}`;
+    h3.textContent = company.business;
+    address.textContent = company.address;
+    phone.textContent = company.phone;
+    website.textContent = company.website;
 
     logo.setAttribute('src', company.imageurl);
     logo.setAttribute('alt', `${company.business} logo`);
