@@ -16,6 +16,8 @@ p {
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #e9e4eb;
+    box-shadow: 5px 5px 20px black;
 }
 
 section {
@@ -27,6 +29,10 @@ section {
 
 img {
     box-shadow: 5px 5px 20px black;
+}
+
+footer {
+    margin: 2.5em;
 }
 
 @media only screen and (max-width:750px) {
