@@ -43,6 +43,7 @@ const displayCompanies = (companies) => {
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
+const display = document.querySelector(".cards");
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
