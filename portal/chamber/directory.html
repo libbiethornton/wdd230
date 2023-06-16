@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="scripts/directory.js"></script>
     </head>
     <body>
         <header>
@@ -25,7 +26,7 @@
                 <nav id="myLinks">
                     <ul>
                         <li><a href="discover.html">Discover</a></li>
-                        <li><a href="">Directory</a></li>
+                        <li><a href="directory.html">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -35,10 +36,12 @@
                 </a>
             </div>
         </header>
-        <main>
-            <h2>Business Directory</h2>
+            <h2 id="directory-heading">Business Directory</h2>
+            <div class="menu">
+                <button id="grid">▦</button>
+                <button id="list">▤</button>
+            </div>
             <div class="cards"></div>
-        </main>
         <footer>
             <div class="top">
                 <img src="images/logo.gif" alt="logo">

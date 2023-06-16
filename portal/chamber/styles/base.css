@@ -97,9 +97,9 @@ footer {
     flex-wrap: wrap;
 }
 
-.top p {
-    /* padding: 1em; */
-}
+/*.top p {
+    padding: 1em;} */
+
 
 .bottom {
     display: flex;
@@ -203,3 +203,57 @@ form input.formbutton {
     width: 96%;
     max-width: 20rem;
 }
+
+/* ---------- Directory Cards ----------- */
+
+body {
+    text-align: center;
+}
+
+.menu button {
+    background-color: #284B63;
+    border: none;
+    color: white;
+    font-size: 4em;
+}
+
+.menu button:hover {
+    background-color: #ACC892;
+    color: #284B63;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 5px 5px 20px black;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section:nth-child(even) {
+	background-color: #ACC892;
+}
+
+

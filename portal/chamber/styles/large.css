@@ -41,4 +41,8 @@
         grid-column: 2/4;
     }
 
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
