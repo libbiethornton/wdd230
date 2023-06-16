@@ -50,7 +50,14 @@
                 <p>Join us on Saturday June 3 at 12pm for the grand opening of Grizzyl's BBQ.</p>
             </section>
             <section class="weather">
-                <p>Weather</p>
+                <h3>Current Weather</h3>
+                <p>Temperature: <span id="current-temp"></span> &deg;F</p>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure>
+                <p>Wind Speed: <span id="windspeed"></span></p>
+                <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
             </section>
             <section class="news">
                 <h3>News Release</h3>
@@ -94,6 +101,7 @@
             <div class="bottom">
                 <p id="copywrite">&copy; <span id="currentyear"></span>Logan Chamber | Libbie Thornton | WDD 230 Project | </p><p id="updated"></p>
                 <script src="scripts/script.js"></script>
+                <script src="scripts/weather.js"></script>
             </div>
         </footer>
     </body>

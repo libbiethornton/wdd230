@@ -158,6 +158,14 @@ a:hover {
     font-size: 1em;
 }
 
+.weather p {
+    font-size: 1.5rem;
+}
+
+.weather figcaption {
+    color: #fff;
+}
+
 /* ---------- Form ----------- */
 
 form {
