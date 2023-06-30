@@ -13,7 +13,7 @@
     <body>
         <header>
             <div>
-                <img src="images/logo.gif" alt="logo" class="logo">
+                <a href="index.html"><img src="images/logo.gif" alt="logo" class="logo"></a>
                 <h1 class="title">Logan Chamber of Commerce</h1>
             </div>
             <div id="links">
@@ -24,25 +24,27 @@
             <p id="time"></p>
                 <nav id="myLinks">
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="directory.html">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                    
                 </a>
             </div>
         </header>
-        <main>
-
+        <main class="grid">
             <section class="hero">
-                <figure class="myphoto">
-                    <img src="images/main-street.jpg" alt="main street">
+                <figure class="mainphoto">
+                    <img srcset="images/main-street-small.jpg 300w, images/main-street-medium.jpg 600w images/main-street-large.jpg 800w"
+                    sizes="(max-width: 600px) 300px, 800px" src="images/main-street-large.jpg" 
+                    alt="main street" loading="lazy">
                 </figure>
                 <h2 id="welcome">Welcome to Logan</h2>
-                <button id="join-btn">Join the Chamber</button>
+                <button class="join-btn">Join the Chamber</button>
             </section>
             <section class="event">
                 <h3>Grand Opening</h3>
@@ -89,7 +91,6 @@
                     in the community in ways that will also help your organization.
                 </p>
             </section>
-
         </main>
         <footer>
             <div class="top">

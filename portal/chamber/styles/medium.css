@@ -1,5 +1,5 @@
 @media only screen and (min-width:450px) {
-    main {
+.grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -31,16 +31,13 @@
 
     #welcome {
         font-size: 2.5em;
-        color: #3C5200;
+        top: 20px;
     }
 
-    #join-btn {
+    .join-btn {
         font-size: 1.5em;
+        bottom: 40px;
+        width: 35%;
     }
-
-    img:hover {
-        opacity: .5;
-    }
-
-
+    
 }

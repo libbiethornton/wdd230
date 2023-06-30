@@ -13,61 +13,100 @@
     <body>
         <header>
             <div>
-                <img src="images/logo.gif" alt="logo" class="logo">
+                <a href="index.html"><img src="images/logo.gif" alt="logo" class="logo"></a>
                 <h1 class="title">Logan Chamber of Commerce</h1>
             </div>
-            <div>
+            <div id="links">
                 <a href="https://www.facebook.com"><img src="images/facebook.gif" alt="facebook icon" id="fb"></a>
                 <a href="https://www.instagram.com/"><img src="images/instagram.gif" alt="instagram icon" id="insta"></a>
-                <button class="ham" onclick="onClick()">HAM</button>
+                <button class="ham" onclick="onClick()">☰</button>
             </div>
             <p id="time"></p>
                 <nav id="myLinks">
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="directory.html">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                 
                 </a>
             </div>
         </header>
-        <main>
+        <main class="grid">
             <section class="hero">
                 <h2>Discover Logan</h2>
-                <img src="images/gallery1.jpg" alt="" loading="lazy">
-                <p>This is a description of the photo.</p>
+                <figure>
+                    <img srcset="images/gallery1-small.jpg 300w, images/gallery1-med.jpg 600w images/gallery1.jpg 640w"
+                    sizes="(max-width: 600px) 300px, 640px" src="images/gallery1.jpg" 
+                    alt="outside park" loading="lazy" class="gallery">
+                </figure>
+                <p>This is a photo in one of the many beautiful parks that are in Logan, UT.
+                    Both locals and tourists alike enjoy spending time outdoors here, especially in the parks.
+                </p>
             </section>
             <section class="event">
-                <img src="images/gallery2.jpg" alt="" loading="lazy">
-                <p>This is a description of the photo.</p>
+                <figure>
+                    <img srcset="images/gallery2-small.jpg 300w, images/gallery2-med.jpg 600w images/gallery2.jpg 640w"
+                    sizes="(max-width: 600px) 300px, 640px" src="images/gallery2.jpg" 
+                    alt="main street" loading="lazy" class="gallery">
+                </figure>
+                <p>Logan's beautiful historic downtown main street view. This town has so much
+                    amazing history behind it and we love to celebrate it!
+                </p>
             </section>
             <section class="weather">
-                <img src="images/gallery3.jpg" alt="" loading="lazy">
-                <p></p>
+                <figure>
+                    <img srcset="images/gallery3-small.jpg 300w, images/gallery3-med.jpg 600w images/gallery3.jpg 640w"
+                    sizes="(max-width: 600px) 300px, 640px" src="images/gallery3.jpg" 
+                    alt="mountains" loading="lazy" id="lake" class="gallery">
+                </figure>
+                <p>A beautiful mountain view right here in Cache Valley. We might be biased, but we
+                    think it is one of the most beautiful places on Earth.
+                </p>
             </section>
             <section class="spotlight">
                 <h3>Demographic Information</h3>
-                <p>Insert information here</p>
+                <p>Population: 52,778</p>
+                <p>Persons under 18 years: 23.9%</p>
+                <p>Persons 65 years and over: 6.9%</p>
+                <p>White alone, percent: 85.1%</p>
+                <p>Hispanic or Latino, percent: 14.3%</p>
+                <p>Asian alone, percent: 3.2%</p>
+                <p>Foreign born persons: 9%</p>
+                <p>Households: 17,152</p>
+                <p>Households with a computer: 96.8%</p>
+                <p>High school graduate or higher of persons age 25 years+: 91.5%</p>
+                <p>Bachelor's degree or higher of persons age 25 years+: 37.3%</p>
+                <p>Median household income: $46,761</p>
+                <p>Population per square mile: 2,957.6</p>
+
             </section>
             <section class="news">
-                <img src="images/gallery4.jpg" alt="" loading="lazy">
-                <p>This is a description of the photo.</p>
+                <figure>
+                    <img srcset="images/gallery4-small.jpg 300w, images/gallery4-med.jpg 600w images/gallery4.jpg 640w"
+                    sizes="(max-width: 600px) 300px, 640px" src="images/gallery4.jpg" 
+                    alt="The Aggie 'A'" loading="lazy" class="gallery">
+                </figure>
+                <p>Logan is home of the Utah State University Aggies. It is right at the heart of the city
+                    and brings a lot of life into this valley. We love cheering our Aggie's on and turning the
+                    A blue after a big win!
+                </p>
             </section>
             <section class="join">
-                <img src="images/gallery5.jpg" alt="" loading="lazy">
-                <p>this is a description of the photo.</p>
+                <figure>
+                    <img srcset="images/gallery5-small.jpg 300w, images/gallery5-med.jpg 600w images/gallery5.jpg 640w"
+                    sizes="(max-width: 600px) 300px, 640px" src="images/gallery5.jpg" 
+                    alt="a lake" loading="lazy" class="gallery">
+                </figure>
+                <p>As we mentioned before, the views here really are incredible! Logan is full of outdoor adventure possibilities!</p>
             </section>
             <section> 
                 <p>Days since last visit:</p><p id="lastVisit"></p>
             </section>
-
-
-
-
         </main>
         <footer>
             <div class="top">
