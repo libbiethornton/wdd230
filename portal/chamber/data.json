@@ -5,63 +5,72 @@
             "address": "5 East 1400 North, Logan, UT 84341",
             "phone": "435-752-7102",
             "website": "https://www.bankofutah.com/",
-            "imageurl": "https://www.ogdenweberchamber.com/wp-content/uploads/2022/08/Untitled-design-1.png"
+            "imageurl": "https://www.ogdenweberchamber.com/wp-content/uploads/2022/08/Untitled-design-1.png",
+            "membership": "gold"
         },
         {
             "business": "Roolee",
             "address": "165 W 1600 N Ste 110, Logan, UT 84341",
             "phone": "(435) 535-3191",
             "website": "https://roolee.com/",
-            "imageurl": "https://cdn.shopify.com/s/files/1/1734/4153/files/logo4.png?height=628&pad_color=fff&v=1613171730&width=1200"
+            "imageurl": "https://cdn.shopify.com/s/files/1/1734/4153/files/logo4.png?height=628&pad_color=fff&v=1613171730&width=1200",
+            "membership": "silver"
         },
         {
             "business": "Cache Valley Fun Park",
             "address": "1255 E 1770 N, North Logan, UT 84341",
             "phone": "(435) 792-4000",
             "website": "https://cachevalleyfunpark.com/",
-            "imageurl": "https://images.activityhero.com/28843/original/b3d56d95-97b1-4dac-baf8-34b4639c2ed4.png"
+            "imageurl": "https://images.activityhero.com/28843/original/b3d56d95-97b1-4dac-baf8-34b4639c2ed4.png",
+            "membership": "bronze"
         },
         {
             "business": "Cafe Sabor",
             "address": "600 W Center St, Logan, UT 84321",
             "phone": "(435) 752-8088",
             "website": "https://www.cafesabor.com/",
-            "imageurl": "https://www.cafesabor.com//images/logo2x.png"
+            "imageurl": "https://www.cafesabor.com//images/logo2x.png",
+            "membership": "bronze"
         },
         {
             "business": "Crumbl Cookies",
             "address": "1309 Main St, Logan, UT 84341",
             "phone": "(435) 363-9997",
             "website": "https://crumblcookies.com/",
-            "imageurl": "https://www.shopnorthcross.com/application/files/8216/0149/7571/Crumbl-Cookies-logo.jpg"
+            "imageurl": "https://www.shopnorthcross.com/application/files/8216/0149/7571/Crumbl-Cookies-logo.jpg",
+            "membership": "gold"
         },
         {
             "business": "Freckle Farm",
             "address": "3915 N Highway 91 Hyde Park, UT, 84318",
             "phone": "435-563-2648",
             "website": "https://frecklefarminc.com/",
-            "imageurl": "https://cachevalleyfamilymagazine.com/wp-content/uploads/2014/08/ff.jpg"
+            "imageurl": "https://cachevalleyfamilymagazine.com/wp-content/uploads/2014/08/ff.jpg",
+            "membership": "silver"
         },
         {
             "business": "Gossner Foods",
             "address": "1051 N 1000 W, Logan, UT 84321",
             "phone": "(435) 227-2500",
             "website": "https://gossner.com/",
-            "imageurl": "https://cdn.shopify.com/s/files/1/0071/3968/8551/files/GossnerLogo2_544x.png"
+            "imageurl": "https://cdn.shopify.com/s/files/1/0071/3968/8551/files/GossnerLogo2_544x.png",
+            "membership": "gold"
         },
         {
             "business": "Lee's Marketplace",
             "address": "555 E 1400 N, Logan, UT 84341",
             "phone": "(435) 755-5100",
             "website": "https://www.leesmarketplace.com/",
-            "imageurl": "https://cayuga-displays.s3.us-east-2.amazonaws.com/img/case_study/Lees-Marketplace-Logo.jpg"
+            "imageurl": "https://cayuga-displays.s3.us-east-2.amazonaws.com/img/case_study/Lees-Marketplace-Logo.jpg",
+            "membership": "bronze"
         },
         {
             "business": "Logan Lanes",
             "address": "1161 N Main St, Logan, UT 84341",
             "phone": "(435) 752-4966",
             "website": "https://loganlanesinc.com/",
-            "imageurl": "https://blakergreen.com/logan-lanes/wp-content/uploads/2018/12/Logan-Lanes-3.png"
+            "imageurl": "https://blakergreen.com/logan-lanes/wp-content/uploads/2018/12/Logan-Lanes-3.png",
+            "membership": "bronze"
         }
     ]
 }
