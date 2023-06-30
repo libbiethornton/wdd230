@@ -39,5 +39,9 @@
         bottom: 40px;
         width: 35%;
     }
+
+    #fb, #insta {
+        padding: 5px;
+    }
     
 }

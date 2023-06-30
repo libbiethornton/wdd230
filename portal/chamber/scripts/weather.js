@@ -23,10 +23,12 @@ async function apiFetch() {
   
 apiFetch();
 
+
+
 function  displayResults(weatherData) {
     currentTemp.innerHTML = weatherData.main.temp;
-    windspeed.innerHTML = weatherData.main.speed;
-    windchill.innerHTML = weatherData.main.feels_like;
+    windspeed.innerHTML = weatherData.wind.speed;
+    windchill.innerHTML = calculateWindChill(currentTemp, windspeed);
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
@@ -34,4 +36,12 @@ function  displayResults(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
+  }
+
+  function calculateWindChill(currentTemp, windspeed) {
+    if (currentTemp <= 50 && windspeed > 3) {
+      let chill = 35.74 + (0.6215 * currentTemp) - (35.75 * (windspeed ** 0.16)) + (0.4275 * currentTemp * (windspeed ** 0.16));
+      return chill;
+    }
+
   }

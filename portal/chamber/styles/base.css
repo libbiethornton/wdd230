@@ -18,6 +18,12 @@ nav ul li {
     padding: .2em;
 }
 
+#links {
+    grid-column: 5;
+    display: flex;
+    align-items: center;
+}
+
 a.icon {
     color: white;
     display: block;
@@ -54,18 +60,8 @@ a {
     font-size: 1rem;
 }
  
-#fb {
+#fb, #insta {
     width: 30px;
-    grid-row: 1/2;
-    grid-column: 3/4;
-    padding: 0;
-    margin: 0px;
-}
-
-#insta {
-    width: 30px;
-    grid-row: 1/2;
-    grid-column: 4/5;
 }
 
 .ham {
@@ -130,7 +126,7 @@ h2, h3, h4 {
     font-size: 2em;
     position: absolute;
     top: 0px;
-    left: 50px;
+    left: 75px;
     color: #3C5200;
     text-shadow: 1px 1px 1.5px #fff;
 }
@@ -198,7 +194,7 @@ form label.topform, form label.radioform {
 }
 
 form label.topform input, form label.topform select {
-    display: block;
+ 
     font-size: 1rem;
     border: 1px solid #284B63;
     border-radius: 4px;
@@ -220,9 +216,9 @@ form input.formbutton {
     background-color: #284B63;
     color: #fff;
     border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
+    padding: .75rem .75rem;
+    margin: 2rem 0 2rem 2%;
+    width: 50%;
     max-width: 20rem;
 }
 
