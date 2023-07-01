@@ -31,14 +31,14 @@ function displayDaysSinceLastVisit() {
   let lastVisit = Number(window.localStorage.getItem("visits-ls"));
 
   if (lastVisit !== 0) {
-    visitsDisplay.textContent = numVisits;
+    visitsDisplay.textContent = lastVisit;
   } else {
     visitsDisplay.textContent = 'This is your first visit!';
   }
 
-  numVisits++;
+  lastVisit++;
 
-  localStorage.setItem("visits-ls", numVisits);
+  localStorage.setItem("visits-ls", lastVisit);
 
 }
 
