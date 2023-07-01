@@ -31,7 +31,7 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-                <a href="javascript:void(0);" class="icon" onclick="getDate()">
+                <a href="javascript:void(0);" class="icon" onclick="myfunction()">
                   
                 </a>
             </div>
@@ -80,8 +80,8 @@
                 <label class="topform">Business Description
                     <textarea name="description" cols="30" rows="10"></textarea>
                 </label>
-                <input type="hidden" value="datetime">
-                <input type="submit" value="Join" class="formbutton">
+                <input type="hidden" name="datetime" value="" id="datetime">
+                <input type="submit" value="Join" class="formbutton" onclick="addDateTime()">
             </form>
         </main>
         <footer>

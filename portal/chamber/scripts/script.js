@@ -19,7 +19,10 @@ function onClick() {
 	}
 }
 
+/* get date last visited */
+
 localStorage.setItem('lastVisit', '2023-02-22');
+
 
 displayDaysSinceLastVisit();
 
@@ -34,10 +37,10 @@ function displayDaysSinceLastVisit() {
     return;
   }
 
+
   const lastVisitDate = Date.parse(lastVisit);
   
   if (!lastVisitDate) {
-    // Stored date is not a valid format
     return;
   }
 
@@ -49,4 +52,15 @@ function displayDaysSinceLastVisit() {
   visitsDisplay.innerText = differenceInDays;
 }
 
+function displayBanner() {
+  let weekday = new Date().getDay();
+  if (weekday == 1 || weekday == 2) {
+    document.querySelector(".banner").style.display = "block";
+  }
+}
+
+function addDateTime() {
+  let day = new Date().getDay();
+  document.querySelector('#datetime').input.value = day;
+}
 

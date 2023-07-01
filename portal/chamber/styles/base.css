@@ -279,6 +279,15 @@ body {
     color: #284B63;
 }
 
+.banner {
+    padding: .25rem;
+    background-color: #284B63;
+    display: none;
+}
 
+.discover-heading {
+    color: #284B63;
+    font-size: 2rem;
+}
 
 
