@@ -10,7 +10,7 @@ async function getCompanyData(url2) {
 
 
     function checkStatus(company) {
-        if (data.membership == "gold" || data.membership == "silver"){
+        if (company.membership == "gold" || company.membership == "silver"){
             return company;
         };
     };

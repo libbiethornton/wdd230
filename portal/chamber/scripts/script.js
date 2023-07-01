@@ -21,36 +21,28 @@ function onClick() {
 
 /* get date last visited */
 
-localStorage.setItem('lastVisit', '2023-02-22');
 
 
-displayDaysSinceLastVisit();
 
 function displayDaysSinceLastVisit() {
   const visitsDisplay = document.getElementById('lastVisit');
-
-  const lastVisit = localStorage.getItem('lastVisit');
-
-  if (!lastVisit) {
-    visitsDisplay.innerText = 'This is your first visit';
-    
-    return;
-  }
-
-
-  const lastVisitDate = Date.parse(lastVisit);
   
-  if (!lastVisitDate) {
-    return;
+
+  let lastVisit = Number(window.localStorage.getItem("visits-ls"));
+
+  if (lastVisit !== 0) {
+    visitsDisplay.textContent = numVisits;
+  } else {
+    visitsDisplay.textContent = 'This is your first visit!';
   }
 
-  const currentDate = new Date();
+  numVisits++;
 
-  const difference = currentDate - lastVisitDate;
-  const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
+  localStorage.setItem("visits-ls", numVisits);
 
-  visitsDisplay.innerText = differenceInDays;
 }
+
+displayDaysSinceLastVisit();
 
 function displayBanner() {
   let weekday = new Date().getDay();
