@@ -4,7 +4,7 @@ const captionDesc = document.querySelector('figcaption');
 const windspeed = document.querySelector('#windspeed');
 const windchill = document.querySelector('#windchill');
 
-const url = "https://api.openweathermap.org/data/2.5/weather?q=Iqaluit&appid=e77a477167067e7a50fa768c6a425e78&units=imperial"
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Logan&appid=e77a477167067e7a50fa768c6a425e78&units=imperial"
 
 async function apiFetch() {
     try {
