@@ -4,7 +4,7 @@ const captionDesc = document.querySelector('figcaption');
 const windspeed = document.querySelector('#windspeed');
 const windchill = document.querySelector('#windchill');
 
-const url = "https://api.openweathermap.org/data/2.5/weather?q=Logan&appid=e77a477167067e7a50fa768c6a425e78&units=imperial"
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Iqaluit&appid=e77a477167067e7a50fa768c6a425e78&units=imperial"
 
 async function apiFetch() {
     try {
@@ -23,12 +23,9 @@ async function apiFetch() {
   
 apiFetch();
 
-
-
-function  displayResults(weatherData) {
+function displayResults(weatherData) {
     currentTemp.innerHTML = weatherData.main.temp;
     windspeed.innerHTML = weatherData.wind.speed;
-    windchill.innerHTML = calculateWindChill(currentTemp, windspeed);
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
@@ -36,12 +33,15 @@ function  displayResults(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
-  }
 
-  function calculateWindChill(currentTemp, windspeed) {
-    if (currentTemp <= 50 && windspeed > 3) {
-      let chill = 35.74 + (0.6215 * currentTemp) - (35.75 * (windspeed ** 0.16)) + (0.4275 * currentTemp * (windspeed ** 0.16));
-      return chill;
+    const temp = weatherData.main.temp;
+    const speed = weatherData.wind.speed;
+
+    if (temp <= 50 && speed > 3) {
+      chill = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
+    } else {
+      chill = "N/A";
     }
+    windchill.innerHTML = chill.toFixed(2);
 
-  }
+};
