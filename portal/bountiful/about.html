@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Home Page">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/bountiful-foods-logo.gif" alt="Bountiful Foods Logo">
+        <button class="ham" onclick="onClick()">☰</button>
+            <nav id="myLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li class="current"><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="aboutpage">
+        <div id="about">
+            <h2>About Us</h2>
+            <p>Bountiful Foods was started in 1963 by a young farmer and his wife, Mack and Marlene Miller. 
+                Their goal was to provide fresh produce to their community. People continued to love 
+                the quality of their produce, so it kept expanding. In over 60 years of business we now 
+                supply fresh produce to much of Southern California from Los Angeles to San Diego. As we've
+                grown our goal has remained the same, to provide high qualtiy good tasting produced to our community.
+                We remain a family owned company. Visit us in store in Carlsbad or have one of our food trucks
+                bring it straight to you. We appreciate your business and love serving the people of Southern California. 
+            </p>
+        </div>
+        <figure id="strawberry">
+            <img srcset="images/strawberry-300.jpg 300w, images/strawberry-600.jpg 600w, images/strawberry-800.jpg 800w"
+            sizes="(max-width: 600px) 300px, 800px" src="images/strawberry-800.jpg" 
+            alt="Strawberries" loading="lazy">
+        </figure>
+        <div id="about-contact">
+            <h2>Contact Us</h2>
+            <p>Phone: (987) 654-3210</p>
+            <p>Email: bountifulfoods@gmail.com</p>
+            <a href="https://www.google.com/maps"><p>Address: 123 Fruit St. Carlsbad, CA 87621</p></a>
+            <p>Store Hours: Mon - Fri 7am-6pm, Sat 7am-4pm</p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;2023 Bountiful Foods</p>
+            <p id="updated"></p> 
+        </div>
+        <div id="contact">
+            <p>Phone: (987) 654-3210</p>
+            <p>Email: bountifulfoods@gmail.com</p>
+            <p>Address: 123 Fruit St.</p>
+            <p>Carlsbad, CA 87621</p>
+        </div>
+        <div id="social-links">
+            <a href="https://www.instagram.com"><img src="images/instagram.gif" alt="instagram logo"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.gif" alt="facebook logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.gif" alt="youtube logo"></a>
+        </div>
+        <script src="scripts/bountiful.js"></script>
+        <script src="scripts/bountifulweather.js"></script>
+        <script src="scripts/bountifulforecast.js"></script>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Home Page">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/bountiful-foods-logo.gif" alt="Bountiful Foods Logo">
+        <button class="ham" onclick="onClick()">☰</button>
+            <nav id="myLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main id="freshpage">
+        <figure id="smoothie">
+            <img srcset="images/smoothie-300.jpg 300w, images/smoothie-600.jpg 600w, images/smoothie-800.jpg 800w"
+            sizes="(max-width: 600px) 300px, 800px" src="images/smoothie-800.jpg" 
+            alt="Smoothie" loading="lazy">
+        </figure>
+        <form id="drinkform">
+            <h2>Build your own Fruit Drink!</h2>
+            <label>First Name:
+                <input type="text" name="fname" id="fname" required>
+            </label>
+            <label>Email:
+                <input type="email" name="email" id="email" placeholder="example@email.com" required>
+            </label>
+            <label>Phone Number:
+                <input type="tel" name="phone" id="phone" required>
+            </label>
+            <label>Fruit 1:
+                <select name="fruit1" id="fruitlist1">
+                    <option value="Select a fruit">--Select Fruit--</option>
+                </select>
+            </label>
+            <label>Fruit 2:
+                <select name="fruit2" id="fruitlist2">
+                    <option value="Select a fruit">--Select Fruit--</option>
+                </select>
+            </label>
+            <label>Fruit 3:
+                <select name="fruit3" id="fruitlist3">
+                    <option value="Select a fruit">--Select Fruit--</option>
+                </select>
+            </label>
+            <label>Special Instructions:
+                <textarea name="instructions" id="instructions" cols="40" rows="5"></textarea>
+            </label>
+            <input type="submit" value="Create Drink" class="button" id="submitButton" onclick="getFruitInfo(url4);return false">
+            <div class="formResults">
+                <p id="f0"></p>
+                <p><span id="f1"></span><span id="f2"></span><span id="f3"></span><span id="f4">
+                </span><span id="f5"></span><span id="f6"></span><span id="f7"></span></p>
+                <p id="date"></p>
+                <p><span id="carbs"></span><span id="calories"></span><span id="fat"></span><span id="protein"></span><span id="sugar"></span></p>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <div>
+            <p>&copy;2023 Bountiful Foods</p>
+            <p id="updated"></p> 
+        </div>
+        <div id="contact">
+            <p>Phone: (987) 654-3210</p>
+            <p>Email: bountifulfoods@gmail.com</p>
+            <p>Address: 123 Fruit St.</p>
+            <p>Carlsbad, CA 87621</p>
+        </div>
+        <div id="social-links">
+            <a href="https://www.instagram.com"><img src="images/instagram.gif" alt="instagram logo"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.gif" alt="facebook logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.gif" alt="youtube logo"></a>
+        </div>
+        <script src="scripts/bountiful.js"></script>
+        <script src="scripts/form.js"></script>
+        <script src="scripts/formdisplay.js"></script>
+    </footer>
+    
+</body>
+</html>

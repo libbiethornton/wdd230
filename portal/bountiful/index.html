@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Home Page">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/bountiful-foods-logo.gif" alt="Bountiful Foods Logo">
+        <button class="ham" onclick="onClick()">☰</button>
+            <nav id="myLinks">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="grid">
+        <section class="photo-overlay">
+            <figure>
+                <img srcset="images/main-600.jpg 600w, images/main-800.jpg 800w, images/main-1000.jpg 1000w"
+                sizes="(max-width: 800px) 600px, 1000px" src="images/main-1000.jpg" 
+                alt="Citrus fruits" loading="lazy">
+            </figure>
+            <div class="overlay">
+                <h1>Bountiful Foods</h1>
+                <p>We're so happy you're here!</p>
+            </div>
+        </section>
+        <section class="coast">
+            <h2>Get to Know our Coast!</h2>
+            <p>The southern coast of California is los of sandy beaches and much warmer than the northern coast.
+                You can find many hills, mountains, and even islands along it. The entire California coast
+                is sometimes referred to as the Golden Coast. Some of the common commodities produced from California
+                are dairy products, grapes, almonds, strawberries, pistachios, lettuce, tomatoes, and walnuts.
+            </p>
+        </section>
+        <figure>
+            <img srcset="images/carrot-300.jpg 300w, images/carrot-600.jpg 600w, images/carrot-800.jpg 800w"
+            sizes="(max-width: 600px) 300px, 800px" src="images/carrot-800.jpg" 
+            alt="Carrots" loading="lazy" class="gallery">
+        </figure>
+        <section class="drink">
+            <h2>Fruit Drink</h2>
+            <p>Did you know that we offer custom fruit drinks? Choose from a wide variety of fresh 
+                produce to create your own custom delicious fruit drink. Make yours today! 
+            </p>
+            <a href="fresh.html" class="button">Try it!</a>
+        </section>
+        <figure class="fruitdrink">
+            <img srcset="images/fruitdrink-300.jpg 300w, images/fruitdrink-600.jpg 600w, images/fruitdrink-800.jpg 800w"
+            sizes="(max-width: 600px) 300px, 800px" src="images/fruitdrink-800.jpg" 
+            alt="Fruit and fruit drink" loading="lazy" class="gallery">
+        </figure>
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <p>Temperature: <span id="current-temp"></span> &deg;F</p>
+            <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>3 Day Forecast: <span id="forecast1"></span> &deg;F, 
+                <span id="forecast2"></span> &deg; F, <span id="forecast3"></span> &deg; F
+            </p>
+        </section>
+        <figure>
+            <img srcset="images/veggies-300.jpg 300w, images/veggies-600.jpg 600w, images/veggies-800.jpg 800w"
+            sizes="(max-width: 600px) 300px, 800px" src="images/veggies-800.jpg" 
+            alt="Vegetables" loading="lazy" class="gallery">
+        </figure>
+        <section class="total-number">
+            <p>Number of specialty drinks you have ordered: <span id="drinks"></span></p>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>&copy;2023 Bountiful Foods</p>
+            <p id="updated"></p> 
+        </div>
+        <div id="contact">
+            <p>Phone: (987) 654-3210</p>
+            <p>Email: bountifulfoods@gmail.com</p>
+            <p>Address: 123 Fruit St.</p>
+            <p>Carlsbad, CA 87621</p>
+        </div>
+        <div id="social-links">
+            <a href="https://www.instagram.com"><img src="images/instagram.gif" alt="instagram logo"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook.gif" alt="facebook logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.gif" alt="youtube logo"></a>
+        </div>
+        <script src="scripts/bountiful.js"></script>
+        <script src="scripts/bountifulweather.js"></script>
+        <script src="scripts/bountifulforecast.js"></script>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+header {
+    border: 2px solid #d95552;
+    padding: .25rem;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: .75rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d95552;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #d95552;
+    color: white;
+}
+
+.ham {
+    color: #d95552;
+    background-color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: #d95552;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+#social-links img {
+    width: 50px;
+    margin: .5rem;
+}
+
+#social-links img:hover {
+    opacity: .8;
+}
+
+
+.photo-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15px;
+
+}
+
+.overlay {
+
+    background-color: #DF9216;
+    position: relative;
+    font-size: 1.25rem;
+    left: -175px;
+    top: 50px;
+    padding: .75rem;
+    color: #EEBFBE;
+    text-shadow: 1px 1px 3px #00000090 ;
+}
+
+figure {
+    margin: 0;
+}
+
+.coast {
+    background-color: #d95552;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.coast h2 {
+    color: #EEBFBE;
+}
+
+.drink {
+    background-color: #EEBFBE;
+    color: #C0353C;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.drink p {
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: #DF9216;
+    color: #C0353C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    width: 50%;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: .75;
+}
+
+.weather {
+    background-color: #E17A7A;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.weather h2 {
+    color: #C0353C;
+}
+
+.gallery {
+    margin-bottom: 20px;
+}
+
+.total-number {
+    background-color: #DF9216;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.current {
+    font-weight: bold;
+}
+
+#about {
+    background-color: #E17A7A;
+    padding: 1.5rem;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#about h2, #about-contact h2 {
+    color: #C0353C;
+}
+
+#about-contact {
+    background-color: #DF9216;
+    padding: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+}
+
+#about-contact a {
+    text-decoration: none;
+    color: white;
+}
+
+#about-contact a:hover {
+    color: #d95552;
+}
+
+form {
+    background-color: #EEBFBE;
+    border: 5px solid #E17A7A;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 20px;
+    color: #d95552;
+}
+
+form input {
+    font-size: 1.5rem;
+    border: 1px solid #C0353C;
+}
+
+form textarea {
+    border: 1px solid #C0353C;
+}
+
+form h2 {
+    color: #d95552;
+    padding: 20px;
+}
+
+#smoothie {
+    margin-top: 20px;
+}
+
+#fruitlist1, #fruitlist2, #fruitlist3 {
+    border: 1px solid #C0353C;
+    font-size: 1rem;
+}
+
+.formResults {
+    color: #C0353C;
+    font-size: .5rem;
+    padding: 20px;
+}
+
