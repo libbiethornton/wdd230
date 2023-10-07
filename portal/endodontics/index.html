@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thornton Endodontics</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <a id="endo_link" href="index.html">
+            <img src="images/endo_logo.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#rootcanal">Root Canal</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+    <main>
+        <div id="about">
+            <h1 class="home">Meet Dr. Thornton</h1>
+            <div class="aboutgrid">
+                <div class="family"><img src="images/familypic.jpg" alt="family photo"></div>
+                <div class="portrait"><img src="images/portrait.jpg" alt="portrait"></div>
+                <div class="bio1">
+                    <p>Dr. Justin Thornton was raised in Lima, Montana. While attending college in Idaho, he married
+                        his wife,
+                        Janet Jenson. They moved to Virginia where he attended dental school at Virginia Commonwealth
+                        University.
+                        Upon graduating in 1996, he was accepted into the 2-year endodontic residency program at the VCU
+                        School
+                        of
+                        Dentistry. While completing the residency program, he was trained in the latest endodontic
+                        techniques
+                        including the use of the surgical operating microscope which he uses to complete all treatments.
+                    </p>
+                </div>
+                <div class="bio2">
+                    <p>Upon
+                        graduating in 1998, he and his wife moved to Cache Valley where he opened up a practice limited
+                        to
+                        endodontics near the hospital. Together they are the parents of 4 children and 2 grandchildren.
+                        Justin
+                        enjoys spending time in Montana, golfing, and attending Utah State Aggie games.</p>
+                </div>
+            </div>
+            <p>Active member of the American Association of Endodontists since 1996.</p>
+            <img src="images/endo22.jpg" alt="AAE official insigina">
+        </div>
+
+
+
+
+        <div id="rootcanal">
+            <section class="what">
+                <h2 class="mid">What is a root canal?</h2>
+                <p> A “root canal” is short for root canal treatment. Which is the removal of pulp tissue from the
+                    inside of the
+                    tooth and the sealing of that space with a biocompatible material.</p>
+                <h2 class="mid">The Process</h2>
+                <ol class="steps">
+                    <li>The area is anesthetized or “numbed”.</li>
+                    <li>The tooth is isolated with a rubber dam.</li>
+                    <li>Inside of the roots are cleaned, shaped, and irrigated removing all pulp tissue and bacteria.
+                    </li>
+                    <li>Following the disinfection process, the space is filled with biocompatible material.</li>
+                </ol>
+                &nbsp;
+                <p><a class="link" href="https://www.aae.org/patients/root-canal-treatment/what-is-a-root-canal/">Learn
+                        more at the American Association of Endodontics website.</a></p>
+            </section>
+            <img src="images/rsz_microscope.jpg" alt="microscope" class="micro">
+        </div>
+
+
+
+
+
+
+        <div id="faq">
+            <h1>FAQ's</h1>
+
+            <button type="button" class="collapsible"><h3>How do I know if I need a root canal?</h3></button>
+            <div class="content">
+                <p>In most cases a patient has seen their general dentist and has been referred to our office for root canal
+                treatment on a specific tooth. However, if you are experiencing tooth pain feel free to call our office
+                and we can help direct you to what your next step will be.</p>
+            </div>
+            <button type="button" class="collapsible"><h3 class="insurance">What insurance is accepted?</h3></button>
+            <div class="content">
+                <p class="insurancepar">We submit claims to most insurance companies. Please call our office to see if we
+                are an in-network
+                provider.
+                (435)755-6955</p>
+            </div>
+        
+            <button type="button" class="collapsible"><h3 class="finance">Is there any financing options available?</h3></button>
+            <div class="content">
+            <p class="financepar">Our office does provide financing options. We give a discount to our patients who do
+                not have insurance.
+                We
+                also give a 5% discount to our patients who pay their account in full on the day of service. We offer
+                no-interest payment plans.</p>
+            </div>
+            <div class="bottom">
+             <img src="images/rsz_staff.jpg" alt="staff" class="staff">
+            <p class="slogan">Serving the endodontic needs of patients in northern Utah since 1998.</p>
+            </div>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+}
+        </script>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022 Libbie Thornton</p>
+        <div>
+            <p class="foot-text">Contact Us</p>
+            <p><a class="foot-link" href="tel:4357556955">(435)755-6955</a></p>
+        </div>
+        <div>
+            <p class="foot-text">Hours</p>
+            <p>Mon, Tue & Thur: 8 am - 4 pm <br> Fri: 8 am - 12 pm</p>
+        </div>
+        <div>
+            <p class="foot-text">Location</p>
+            <p><a class="foot-link"
+                    href="https://www.google.com/maps/place/Thornton+Justin+D+DDS/@41.7566721,-111.821024,15z/data=!3m1!5s0x87547dc75d212a55:0xf4441be9164dda50!4m12!1m6!3m5!1s0x0:0x9bb465cb96a43b8d!2sThornton+Justin+D+DDS!8m2!3d41.7566721!4d-111.821024!3m4!1s0x0:0x9bb465cb96a43b8d!8m2!3d41.7566721!4d-111.821024">550
+                    E 1400 N STE F <br> Logan, UT 84341</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
